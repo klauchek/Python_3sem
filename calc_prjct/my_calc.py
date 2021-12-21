@@ -12,7 +12,7 @@ class my_calc():
         self.root = Tk()
 
         self.root["bg"] = "#000"
-        
+        self.root.geometry(cm.calc_size)
         self.root.title("Калькулятор")
         self.root.resizable(False, False)
 
@@ -21,6 +21,7 @@ class my_calc():
         self.btns_init(self.btns)
 
         self.build()
+
 
     def calc(self):
         self.root.mainloop()
